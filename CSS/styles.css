@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+div.container {
+  border: 5px solid #006D77;
+  width: 99%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #EDF6F9;
+  color: #006D77;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: space-around;
+}
+
+header img {
+  width: 100%;
+}
+
+div.logo-title {
+  width: 40%;
+  margin: auto 0;
+}
+
+.social-links li {
+  display: inline-block;
+  width: 60px;
+  padding: 10px;
+}
+
+nav {
+  background-color: #83C5BE;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+nav ul li {
+  display: inline-block;
+  border: 3px solid #E29578;
+  background-color: #FFDDD2;
+  width: 140px;
+  margin: 3px;
+  line-height: 2em;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-variant: small-caps;
+  font-size: larger;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+nav ul li:hover {
+  flex-grow: 0.08;
+  border: 5px solid #b86040;
+  font-size: x-large;
+  font-weight: bold;
+  background-color: #eba68d;
+}
+
+nav ul li a {
+  display: block;
+  color: black;
+  text-decoration: none;
+  margin-left: 10%;
+}
+
+nav ul li a img {
+  width: 40%;
+  float: right;
+}
+
+article {
+  background-color: A8242F;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: space-around;
+  margin: 15px 10px;
+}
+
+.statement {
+  padding-top: 70px;
+  width: 50%;
+  font-size: larger;
+}
+
+.side {
+  width: 45%;
+}
+article img {
+  width: 100%;
+  height: 100%;
+  /* take the aspect ratio of first image, and fit the rest images into the same space */
+  object-fit: cover;
+}
+h1,
+p {
+  padding: 10px;
+}
+
+section {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 0;
+}
+
+section img {
+  width: 100%;
+  margin-top: 20px;
+}
+
+div.left,
+div.middle,
+div.right {
+  width: 30%;
+}
+
+footer {
+  clear: both;
+  background-color: #EDF6F9;
+  color: #006D77;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 2em;
+  padding-left: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  nav {
+    float: left;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li:hover {
+    flex-grow: 0;
+    font-size: large;
+    font-weight: bold;
+    background-color: #eba68d;
+  }
+  
+  article, section {
+    display: block;
+  }
+
+  .statement, .side {
+    width: 99%;
+    margin: 10px 0;
+  }
+
+  div.left,
+  div.middle,
+  div.right {
+    width: 95%;
+    margin: 10px;
+  }
+}
